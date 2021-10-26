@@ -151,7 +151,7 @@ for destination in destinationList:
 
         if 'snow' in weather:
             dailyDict['rainFall'] = daily['snow']
-            dailyDict['snowFall'] = daily['snow_depth']
+            dailyDict['snowFall'] = daily['snow_depth'] / 10
         elif 'rain' in weather:
             dailyDict['rainFall'] = daily['precip']
 
